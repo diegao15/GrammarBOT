@@ -1,0 +1,14 @@
+C:\Users\diega\source\repos\GrammarbotWinforms\GrammarbotWinforms\obj\Debug\GrammarbotWinforms.csprojAssemblyReference.cache
+C:\Users\diega\source\repos\GrammarbotWinforms\GrammarbotWinforms\obj\Debug\GrammarbotWinforms.Form1.resources
+C:\Users\diega\source\repos\GrammarbotWinforms\GrammarbotWinforms\obj\Debug\GrammarbotWinforms.Properties.Resources.resources
+C:\Users\diega\source\repos\GrammarbotWinforms\GrammarbotWinforms\obj\Debug\GrammarbotWinforms.csproj.GenerateResource.cache
+C:\Users\diega\source\repos\GrammarbotWinforms\GrammarbotWinforms\obj\Debug\GrammarbotWinforms.csproj.CoreCompileInputs.cache
+C:\Users\diega\source\repos\GrammarbotWinforms\GrammarbotWinforms\bin\Debug\GrammarbotWinforms.exe.config
+C:\Users\diega\source\repos\GrammarbotWinforms\GrammarbotWinforms\bin\Debug\GrammarbotWinforms.exe
+C:\Users\diega\source\repos\GrammarbotWinforms\GrammarbotWinforms\bin\Debug\GrammarbotWinforms.pdb
+C:\Users\diega\source\repos\GrammarbotWinforms\GrammarbotWinforms\obj\Debug\GrammarbotWinforms.exe
+C:\Users\diega\source\repos\GrammarbotWinforms\GrammarbotWinforms\obj\Debug\GrammarbotWinforms.pdb
+C:\Users\diega\source\repos\GrammarbotWinforms\GrammarbotWinforms\bin\Debug\Newtonsoft.Json.dll
+C:\Users\diega\source\repos\GrammarbotWinforms\GrammarbotWinforms\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\diega\source\repos\GrammarbotWinforms\GrammarbotWinforms\bin\Debug\Newtonsoft.Json.xml
+C:\Users\diega\source\repos\GrammarbotWinforms\GrammarbotWinforms\obj\Debug\GrammarbotWinforms.csproj.CopyComplete
