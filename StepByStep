@@ -15,3 +15,11 @@ using Newtonsoft.Json on your C# file header;
 
 #The project that im going to share with you guys have a class with a simple way to implement that calls using an async task and that 
 Package, fell free to download it and make it better.
+
+#To call that API you just need to have three parameters:
+First one is the API_KEY that you get from the SIGNUP https://www.grammarbot.io/signup
+Second one is the sentence that you want to check
+And Third is the language you are going to check: "en-US"
+
+#After send that call to the WEb servie you will get a lot of info on the response, but, the Typos suggestions will come on "Matchs" arrays
+as you guys can see on the example.
