@@ -61,6 +61,6 @@ Package, fell free to download it and make it better.</p>
 
 <h3>Conclusion</h3>
   
-<p>After send that call to the WEb servie you will get a lot of info on the response, but, the Typos suggestions will come on "Matchs" arrays
+<p>After call the Web servie you will get a lot of info on the response, but, the Typos suggestions will come on "Matchs" arrays
 as you guys can see on the example.</p>
 
