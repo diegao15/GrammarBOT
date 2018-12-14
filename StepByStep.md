@@ -33,16 +33,31 @@ Package, fell free to download it and make it better.</p>
 <ol>
 </ul>
 <h1>Example</h1>
-<p>After declare the class provided on your cs files you just need to instanciate the object and use it as you can see on the code below</p>
+<p>After declare the class provided, on your cs file header you just need to instanciate the object and use it as you can see on the code below</p>
+  <br />  
+  <span style="color:green">// declare and instanciate the object from the class provided</span><br />
+  GrammarBot gBot = new GrammarBot();<br />
+  <span style="color:green">// setup you API key</span><br />
+  gBot.API_Key = txtAPI_Key.Text;<br />
+  <span style="color:green">// setup you language , it an be en-US or another one you want</span><br />
+  gBot.language = txtLanguage.Text;<br />
+  <span style="color:green">//call the function that will call the API itself</span><br />
+  gBot.CheckGrammar(txtSentense.Text);<br />
   
-  // declare and instanciate the object from the class provided
-  GrammarBot gBot = new GrammarBot();
-  // setup you API key
-  gBot.API_Key = txtAPI_Key.Text;
-  // setup you language , it an be en-US or another one you want
-  gBot.language = txtLanguage.Text;
-  //call the function that will call the API itself
-  gBot.CheckGrammar(txtSentense.Text);
+  <br />
+  <p>After that you just need to chec about the response on the <blockquote>"Matches"</blockquote> Array </p>
+  
+  <span style="color:green">//Check if there are any response from the server</span><br />
+  if (gBot.GResponse != null)<br />
+  {<br />
+      <span style="color:green">//Check it there are any mistakes on the sentense to alert the user</span><br />
+      if (gBot.GResponse.matches.Count > 0)<br />
+      {<br />
+          <span style="color:green">//Show the first suggestion to the user, it could also be a loop and 
+          the suggestions listed on a multiline textbox</span><br />
+          MessageBox.Show( gBot.GResponse.matches[0].message);<br />
+      }<br />
+  }<br />
 
 <h3>Conclusion</h3>
   
