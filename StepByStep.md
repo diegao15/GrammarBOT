@@ -35,26 +35,26 @@ Package, fell free to download it and make it better.</p>
 <h1>Example</h1>
 <p>After declare the class provided, on your cs file header you just need to instanciate the object and use it as you can see on the code below</p>
   <br />  
-  <span style="color:green">// declare and instanciate the object from the class provided</span><br />
+  // declare and instanciate the object from the class provided<br />
   GrammarBot gBot = new GrammarBot();<br />
-  <span style="color:green">// setup you API key</span><br />
+  // setup you API key <br />
   gBot.API_Key = txtAPI_Key.Text;<br />
-  <span style="color:green">// setup you language , it an be en-US or another one you want</span><br />
+  // setup you language , it an be en-US or another one you want <br />
   gBot.language = txtLanguage.Text;<br />
-  <span style="color:green">//call the function that will call the API itself</span><br />
+  //call the function that will call the API itself <br />
   gBot.CheckGrammar(txtSentense.Text);<br />
   
   <br />
-  <p>After that you just need to chec about the response on the <blockquote>"Matches"</blockquote> Array </p>
+  <p>After that you just need to chec about the response on the "Matches" Array </p>
   
-  <span style="color:green">//Check if there are any response from the server</span><br />
+  //Check if there are any response from the server<br />
   if (gBot.GResponse != null)<br />
   {<br />
-      <span style="color:green">//Check it there are any mistakes on the sentense to alert the user</span><br />
+      //Check it there are any mistakes on the sentense to alert the user<br />
       if (gBot.GResponse.matches.Count > 0)<br />
       {<br />
-          <span style="color:green">//Show the first suggestion to the user, it could also be a loop and 
-          the suggestions listed on a multiline textbox</span><br />
+          //Show the first suggestion to the user, it could also be a loop and 
+          the suggestions listed on a multiline textbox<br />
           MessageBox.Show( gBot.GResponse.matches[0].message);<br />
       }<br />
   }<br />
