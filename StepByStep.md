@@ -31,8 +31,21 @@ Package, fell free to download it and make it better.</p>
 <li>Second one is the sentence that you want to check</li>
 <li>And Third is the language you are going to check: "en-US"</li>
 <ol>
+</ul>
+<h1>Example</h1>
+<p>After declare the class provided on your cs files you just need to instanciate the object and use it as you can see on the code below</p>
+  
+  // declare and instanciate the object from the class provided
+  GrammarBot gBot = new GrammarBot();
+  // setup you API key
+  gBot.API_Key = txtAPI_Key.Text;
+  // setup you language , it an be en-US or another one you want
+  gBot.language = txtLanguage.Text;
+  //call the function that will call the API itself
+  gBot.CheckGrammar(txtSentense.Text);
 
-<li>Conclusion</li>
+<h3>Conclusion</h3>
+  
 <p>After send that call to the WEb servie you will get a lot of info on the response, but, the Typos suggestions will come on "Matchs" arrays
 as you guys can see on the example.</p>
-</ul>
+
