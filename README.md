@@ -91,10 +91,12 @@ Package, fell free to download it and make it better.</p>
  <br />
  <p>REMEBER THAT LOOP HAVE TO COME BEFORE YOU CHECK THE THE RESPONSE</p> 
  
- //give 10 seconds to the API return something<br />
+ //give 10 cycles to the API return something<br />
  while (gBot.GResponse == null&& i<10)<br />
 {<br />
     i++;<br />
+    // sleep half second
+    System.Threading.Thread.Sleep(500);
     lblStatus.Text = "Checking Grammar";<br />
 }<br />
 if (i >= 10)<br />
@@ -117,9 +119,11 @@ if (i >= 10)<br />
   gBot.CheckGrammar(txtSentense.Text);<br />
   
    <br />
- //give 10 seconds to the API return something<br />
+ //give 10 cycles to the API return something<br />
  while (gBot.GResponse == null&& i<10)<br />
 {<br />
+    // sleep half second
+    System.Threading.Thread.Sleep(500);
     i++;<br />
     lblStatus.Text = "Checking Grammar";<br />
 }<br />
