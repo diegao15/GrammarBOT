@@ -69,7 +69,7 @@ Package, fell free to download it and make it better.</p>
   gBot.CheckGrammar(txtSentense.Text);<br />
   
   <br />
-  <p>After that you just need to chec about the response on the "Matches" Array </p>
+  <p>After that you just need to check about the response on the "Matches" Array </p>
   
   //Check if there are any response from the server<br />
   if (gBot.GResponse != null)<br />
@@ -85,10 +85,9 @@ Package, fell free to download it and make it better.</p>
 
 <p>To avoid the program to freeze, the function that calls the API is Asynchronous, so the response will not come immediately
  after you call the function "CheckGrammar", because of that,before you check the response, you can use a loop just to give some time to the api to return the information, as you can see below<p/>
- 
- <p>REMEBER THAT LOOP HAVE TO COME BEFORE YOU CHECK THE THE RESPONSE</p>
-  
  <br />
+ <p>REMEBER THAT LOOP HAVE TO COME BEFORE YOU CHECK THE THE RESPONSE</p> 
+ 
  //give 10 seconds to the API return something<br />
  while (gBot.GResponse == null&& i<10)<br />
 {<br />
@@ -98,10 +97,9 @@ Package, fell free to download it and make it better.</p>
 if (i >= 10)<br />
 //if there are nothing on the response so we got a TimeOut<br />
     MessageBox.Show("Time out ...");<br />
+    <br />
     
- <p>THE ENTIRE CODE WILL BE THIS</p>
- 
- 
+ <p>THE ENTIRE CODE WILL BE THIS</p> 
  <br />  
   // declare and instanciate the object from the class provided<br />
   GrammarBot gBot = new GrammarBot();<br />
@@ -111,8 +109,6 @@ if (i >= 10)<br />
   gBot.language = txtLanguage.Text;<br />
   //call the function that will call the API itself <br />
   gBot.CheckGrammar(txtSentense.Text);<br />
-  
-  <br />
    <br />
  //give 10 seconds to the API return something<br />
  while (gBot.GResponse == null&& i<10)<br />
