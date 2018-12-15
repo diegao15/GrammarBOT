@@ -95,8 +95,8 @@ Package, fell free to download it and make it better.</p>
  while (gBot.GResponse == null&& i<10)<br />
 {<br />
     i++;<br />
-    // sleep half second
-    System.Threading.Thread.Sleep(500);
+    // sleep half second<br />
+    System.Threading.Thread.Sleep(500);<br />
     lblStatus.Text = "Checking Grammar";<br />
 }<br />
 if (i >= 10)<br />
@@ -122,8 +122,8 @@ if (i >= 10)<br />
  //give 10 cycles to the API return something<br />
  while (gBot.GResponse == null&& i<10)<br />
 {<br />
-    // sleep half second
-    System.Threading.Thread.Sleep(500);
+    // sleep half second<br />
+    System.Threading.Thread.Sleep(500);<br />
     i++;<br />
     lblStatus.Text = "Checking Grammar";<br />
 }<br />
