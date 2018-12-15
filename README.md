@@ -61,10 +61,13 @@ Package, fell free to download it and make it better.</p>
   <br />  
   // declare and instanciate the object from the class provided<br />
   GrammarBot gBot = new GrammarBot();<br />
+  
   // setup you API key <br />
   gBot.API_Key = txtAPI_Key.Text;<br />
+  
   // setup you language , it an be en-US or another one you want <br />
   gBot.language = txtLanguage.Text;<br />
+  
   //call the function that will call the API itself <br />
   gBot.CheckGrammar(txtSentense.Text);<br />
   
@@ -103,12 +106,16 @@ if (i >= 10)<br />
  <br />  
   // declare and instanciate the object from the class provided<br />
   GrammarBot gBot = new GrammarBot();<br />
+  
   // setup you API key <br />
   gBot.API_Key = txtAPI_Key.Text;<br />
+  
   // setup you language , it an be en-US or another one you want <br />
   gBot.language = txtLanguage.Text;<br />
+  
   //call the function that will call the API itself <br />
   gBot.CheckGrammar(txtSentense.Text);<br />
+  
    <br />
  //give 10 seconds to the API return something<br />
  while (gBot.GResponse == null&& i<10)<br />
@@ -120,7 +127,7 @@ if (i >= 10)<br />
 //if there are nothing on the response so we got a TimeOut<br />
     MessageBox.Show("Time out ...");<br />
     
-  <p>After that you just need to checK about the response on the "Matches" Array </p>  
+  <p>//After that you just need to checK about the response on the "Matches" Array </p>  
   //Check if there are any response from the server<br />
   if (gBot.GResponse != null)<br />
   {<br />
